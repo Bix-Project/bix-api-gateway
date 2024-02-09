@@ -1,0 +1,30 @@
+version: "3.9"
+
+networks:
+  kong-net:
+    name: kong-net
+    driver: bridge
+    external: true
+   
+
+services:
+
+#  bix-sender:
+#    image: brunoboiko/bix-sender-service:latest
+#    environment:
+#      PORT: ":8081"
+#    networks:
+#      - kong-net
+#    ports:
+#      - 8081:8081
+#
+#  bix-receiver:
+#    image: marcelol/bix-receiver-service:latest
+#    environment:
+#      PORT: ":8082"
+#    networks:
+#      - kong-net
+#    ports:
+#      - 8082:8082
+#
+# etc...
